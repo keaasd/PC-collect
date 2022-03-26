@@ -1,13 +1,16 @@
-.main__collectPC {
-  border: 1px solid white;
-}
-
 .main__display {
   position: relative;
   z-index: 10;
   left: 0;
-  max-width: 66rem;
+  max-width: 70rem;
   margin-top: 15rem;
+  margin-bottom: 22rem;
+}
+
+@media (max-width: 1800px) {
+  .main__display {
+    margin-bottom: 5vw;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -24,17 +27,24 @@
 
 @media (max-width: 1380px) {
   .main__display {
-    margin-top: 5rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .main__display {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (width: 900px) {
+  .main__display {
+    margin-bottom: 10rem;
   }
 }
 
 @media (max-width: 900px) {
-  .main__display {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 850px) {
   .main__display {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -49,18 +59,29 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 4rem;
   }
 }
 
 .main__display h1 {
   font-weight: 700;
   font-size: 6.4rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .main__display h1 {
     font-size: 4rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__display h1 {
+    max-width: 80%;
   }
 }
 
@@ -117,6 +138,10 @@
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 
 .timer__block > p:last-child {
@@ -125,10 +150,25 @@
   opacity: 0.4;
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 .button-pink {
   background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.button-pink:hover {
+  background: linear-gradient(94.78deg, #df6e66 11.19%, #441b44 93.72%);
+}
+
+@media (max-width: 768px) {
+  .button-pink {
+    margin-top: 5rem;
+  }
 }
 
 .main__back {
@@ -145,5 +185,15 @@
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__back img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 450px;
+    -o-object-position: right;
+       object-position: right;
   }
 }

@@ -1,0 +1,124 @@
+.main__work {
+  margin: 0 3.2rem;
+  margin-bottom: 20rem;
+}
+
+@media (min-width: 767.98px) and (max-width: 1100px) {
+  .main__work {
+    margin-top: -10rem;
+  }
+}
+
+.work__head p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  opacity: 0.5;
+  max-width: 41.1rem;
+}
+
+@media (max-width: 1100px) {
+  .work__head p {
+    margin: auto;
+    max-width: 50rem;
+    text-align: center;
+    padding-left: 2rem;
+  }
+}
+
+.work__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4.9rem;
+}
+
+@media (max-width: 1100px) {
+  .work__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.work__img {
+  width: 9rem;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+
+.block__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.work__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8rem;
+}
+
+@media (min-width: 767.98px) and (max-width: 1100px) {
+  .work__title {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin-top: 8rem;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .work__title {
+    display: block;
+  }
+}
+
+.work__block {
+  max-width: 30.6rem;
+}
+
+@media (max-width: 768px) {
+  .work__block {
+    margin: 10rem auto;
+    text-align: center;
+  }
+}
+
+.work__block:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .work__block:not(:last-child) {
+    margin: 10rem auto;
+  }
+}
+
+.work__block h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.work__block p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.5;
+}
